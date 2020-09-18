@@ -1,0 +1,16 @@
+{
+  "name": "monorepo-register-user",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "typescript": "^4.0.2",
+    "@monorepo-register-user/eslint-config": "*"
+  }
+}
