@@ -20,9 +20,13 @@ module.exports = {
     ecmaVersion: 11,
     sourceType: 'module'
   },
-  plugins: ['react', '@typescript-eslint', 'prettier'],
+  plugins: ['react-native', 'react', '@typescript-eslint', 'prettier'],
   rules: {
-    'prettier/prettier': 'error'
+    'prettier/prettier': 'error',
+    'no-underscore-dangle': 'off',
+    'prettier/prettier': 'error',
+    'class-methods-use-this': 'off',
+    '@typescript-eslint/camelcase': 'off'
   },
   settings: {
     'import/resolver': {
