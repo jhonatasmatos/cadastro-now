@@ -51,13 +51,15 @@ export const ContainerButton = styled.View`
 export const Button = styled(RectButton)`
   height: 56px;
   width: 360px;
+  flex-direction: row;
   border-radius: 10px;
   justify-content: center;
   align-items: center;
   background-color: #333;
  `
 
-export const Buttonext = styled.Text`
+export const ButtonText = styled.Text`
   font-size: 18px;
   color: #fff;
+  padding-right: 24px;
 `
