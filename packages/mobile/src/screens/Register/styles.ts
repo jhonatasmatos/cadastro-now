@@ -3,55 +3,59 @@ import styled from 'styled-components/native'
 
 export const Container = styled.View`
   flex: 1;
-  justify-content: center;
-  align-items: center;
+  padding: 0 24px;
   background-color: #ffff00;
 `
 
-export const ContainerImage = styled.View`
-  flex: 1;
-  margin-top: 48px;
+export const Header = styled.View`
+  flex-direction: row;
+  height: 56px;
   align-items: center;
+  justify-content: space-between;
+
+  padding-top: 36px;
 `
 
-export const Image = styled.Image`
-  width: 250px;
-  height: 250px;
-  border-radius: 75px;
-`
-
-export const ContainerText = styled.View`
+export const ContainerTitle = styled.View`
   flex: 1;
-  margin-top: 48px;
-  align-items: center;
+  margin-top: 18px;
 `
 
 export const Title = styled.Text`
+  line-height: 52px;
   font-size: 32px;
   font-weight: bold;
   color: #333;
 `
 
-export const SubTitle = styled.Text`
-  font-size: 18px;
-
-  width: 320px;
-  text-align: center;
-  padding-top: 12px;
-
-  color: #333;
+export const ContainerInputs = styled.View`
+  flex: 2;
+  margin-bottom: 36px;
+  align-items: center;
 `
 
-export const ContainerButton = styled.View`
+export const TextInput = styled.TextInput`
+  margin-bottom: 12px;
+  padding-left: 10px;
+
+  width: 100%;
   height: 56px;
-  margin-bottom: 48px;
+  border-radius: 10px;
+
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+`;
+
+export const ContainerButton = styled.View`
+  flex: 1;
+  margin-top: 36px;
   align-items: center;
 `
 
 export const Button = styled(RectButton)`
   height: 56px;
-  width: 360px;
-  flex-direction: row;
+  width: 100%;
   border-radius: 10px;
   justify-content: center;
   align-items: center;
@@ -61,5 +65,4 @@ export const Button = styled(RectButton)`
 export const ButtonText = styled.Text`
   font-size: 18px;
   color: #fff;
-  padding-right: 24px;
 `
