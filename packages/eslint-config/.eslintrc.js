@@ -26,7 +26,8 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'prettier/prettier': 'error',
     'class-methods-use-this': 'off',
-    '@typescript-eslint/camelcase': 'off'
+    '@typescript-eslint/camelcase': 'off',
+    '@typescript-eslint/no-unused-vars': 'off'
   },
   settings: {
     'import/resolver': {
