@@ -15,7 +15,7 @@ interface User {
 }
 
 const Landing: React.FC = () => {
-  const[isSuccess, setIsSuccess] = useState(true)
+  const [isSuccess, setIsSuccess] = useState(false)
   const [user, setUser] = useState({} as User)
 
   const handleSubmit = useCallback(
@@ -44,7 +44,7 @@ const Landing: React.FC = () => {
       <SuccessContent>
         <Form onSubmit={handleGoBack}>
           <h1>Parabéns ;)</h1>
-          <h2>{user.name} foi registrado com sucesso</h2>
+          <h2>{user.name}, foi registrado com sucesso</h2>
 
           <button type="submit" onSubmit={handleGoBack}>Voltar</button>
         </Form>
