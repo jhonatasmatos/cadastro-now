@@ -75,6 +75,8 @@ export const SuccessContent = styled.div`
       margin-top: 18px;
       transition: background-color 0.2s;
 
+      margin-top: 26px;
+
       &:hover {
         background: ${shade(0.2, '#333')}
       }
