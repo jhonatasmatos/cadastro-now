@@ -9,6 +9,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@monorepo-register-user/axios-config": "*",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/native": "^5.7.3",
     "@react-navigation/stack": "^5.9.0",
@@ -26,6 +27,7 @@
     "@babel/runtime": "^7.8.4",
     "@types/jest": "^25.2.3",
     "@types/react-native": "^0.63.2",
+    "@types/react-native-vector-icons": "^6.4.6",
     "@types/react-test-renderer": "^16.9.2",
     "@types/styled-components": "^5.1.3",
     "babel-jest": "^25.1.0",
