@@ -52,7 +52,7 @@ const Landing: React.FC = () => {
     ) : (
       <Content>
         <Form onSubmit={handleSubmit}>
-          <h1>Realizar cadastro</h1>
+          <h1>Cadastar usuários</h1>
 
           <Input name='name' icon={FiUser} placeholder='Nome' />
           <Input name='email' icon={FiMail} placeholder='E-mail' />
