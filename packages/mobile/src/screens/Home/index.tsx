@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native'
 import Icon from 'react-native-vector-icons/Feather'
 
 import { 
@@ -17,7 +17,7 @@ import {
 import people from '../../assets/people.png'
 
 const Home: React.FC = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation()
 
   async function handleRegister(): Promise<void> {
     navigation.navigate('Register')

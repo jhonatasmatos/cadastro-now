@@ -1,12 +1,6 @@
 import { RectButton } from 'react-native-gesture-handler'
 import styled from 'styled-components/native'
 
-export const Container = styled.View`
-  flex: 1;
-  padding: 0 24px;
-  background-color: #ffff00;
-`
-
 export const Header = styled.View`
   flex-direction: row;
   height: 56px;
@@ -65,4 +59,56 @@ export const Button = styled(RectButton)`
 export const ButtonText = styled.Text`
   font-size: 18px;
   color: #fff;
+`
+export const Modal = styled.Modal``
+
+export const ModalView = styled.View`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #000000aa;
+`
+
+export const ModalContent = styled.View`
+  width: 260px;
+  height: 360px;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 16px;
+
+  background-color: #fff;
+`
+
+export const ModalTitle = styled.Text`
+  font-size: 20px;
+  font-weight: 500;
+`
+
+export const ModalText = styled.Text`
+font-size: 16px;
+text-align: center;
+
+padding-top: 16px;
+`
+
+export const ModalButton = styled(RectButton)`
+width: 100%;
+height: 52px;
+
+justify-content: center;
+align-items: center;
+
+background-color: #333;
+
+margin-top: 36px;
+`
+
+export const ModalButtonText = styled.Text`
+font-size: 16px;
+font-weight: 500;
+
+color: #ffff00;
+
 `
