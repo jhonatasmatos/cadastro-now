@@ -19,11 +19,26 @@ class UserController {
   }
 
   async index(request: Request, response: Response) {
-    const userRepository = getCustomRepository(UserRepository);
+    const userRepository = getCustomRepository(UserRepository)
 
-    const users = await userRepository.find();
+    const users = await userRepository.find()
 
-    return response.json(users);
+    return response.json(users)
+  }
+
+  async view(request: Request, response: Response) {
+    const { userId } = request.params
+
+    const userRepository = getCustomRepository(UserRepository)
+
+    const user = await userRepository.findOne(userId);
+
+    if (!user) {
+      const resError = { error: `user wit id '${userId}' was not found` }
+      return response.status(404).json(resError)
+    }
+
+    return response.json(user)
   }
 }
 
