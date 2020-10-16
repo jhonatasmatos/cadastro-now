@@ -40,6 +40,21 @@ class UserController {
 
     return response.json(user)
   }
+
+  async remove(request: Request, response: Response) {
+    const { userId } = request.params
+
+    const userRepository = getCustomRepository(UserRepository)
+
+    const { affected = 0 } = await userRepository.delete(userId)
+
+    if (!affected) {
+      const resError = { error: `user wit id '${userId}' was not found` }
+      return response.status(404).json(resError)
+    }
+
+    return response.status(204)
+  }
 }
 
 export default new UserController()
