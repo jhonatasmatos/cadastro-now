@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, { useState, useEffect, useCallback } from 'react'
 import { FiUser, FiMail, FiLock } from 'react-icons/fi'
 import axios from '@monorepo-register-user/axios-config'
