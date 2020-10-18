@@ -1,3 +1,4 @@
+ // eslint-disable-next-line
 import React, { InputHTMLAttributes, useEffect, useRef, useState, useCallback } from 'react'
 import { IconBaseProps } from 'react-icons'
 import { useField } from '@unform/core'
@@ -14,6 +15,7 @@ const Input: React.FC<InputProps> = ({name, icon: Icon, ...rest }) => {
   const [isFilled, setIsFilled] = useState(false)
 
   const inputRef = useRef<HTMLInputElement>(null)
+   // eslint-disable-next-line
   const { fieldName, defaultValue, error, registerField } = useField(name)
 
   useEffect(() => {
